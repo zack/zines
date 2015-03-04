@@ -1,0 +1,31 @@
+<h2>Add a Zine</h2>
+
+  <%= simple_form_for @zine do |f| %>
+    <%= f.input :title %>
+    <%= f.input :issue %>
+    <%= f.input :author%>
+    <%= f.input :editor %>
+    <%= f.input :contributor %>
+    <%= f.input :genre%>
+    <%= f.input :subject %>
+    <%= f.input :month %>
+    <%= f.input :year%>
+    <%= f.input :location_of_publication %>
+    <%= f.input :content_description %>
+    <%= f.input :publisher%>
+    <%= f.input :distro %>
+    <%= f.input :physical_description %>
+    <%= f.input :language%>
+    <%= f.input :notes%>
+    <%= f.input :see_also %>
+    <%= f.input :freedoms_and_restrictions %>
+    <%= f.input :archival_location%>
+    <%= f.input :distributor%>
+    <%= f.input :digital_reference%>
+    <br>
+
+    <%= f.submit 'Add Zine' %>
+  <% end %>
+
+
+
