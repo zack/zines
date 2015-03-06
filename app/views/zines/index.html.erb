@@ -1,6 +1,8 @@
-<h1>All Zines</h1>
+<%= stylesheet_link_tag "application" %>
 
-<table id='zines' border='1px solid black'>
+<h1><%= @zines.count %> Zines</h1>
+
+<table id='zines'>
   <tr id='headers'>
     <% for attribute in @zines.first.attributes.keys %>
       <th><%= attribute.humanize %></th>
@@ -14,4 +16,3 @@
     </tr>
   <% end %>
 </table>
-

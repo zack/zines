@@ -1,0 +1,14 @@
+body {
+  font-family: 'arial', 'sans-serif';
+}
+table#zines {
+  border-collapse: collapse;
+  th {
+    background-color: #CCC;
+  }
+  td,th {
+    min-width: 87px;
+    padding: 2px 7px;
+    border: 1px solid black;
+  }
+}
