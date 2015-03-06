@@ -1,28 +1,29 @@
-<h2>Add a Zine</h2>
+<h3>Add a Zine</h2>
 
   <%= simple_form_for @zine do |f| %>
-    <%= f.input :title %>
-    <%= f.input :issue %>
-    <%= f.input :author%>
-    <%= f.input :editor %>
-    <%= f.input :contributor %>
-    <%= f.input :genre%>
-    <%= f.input :subject %>
-    <%= f.input :month %>
-    <%= f.input :year%>
-    <%= f.input :location_of_publication %>
-    <%= f.input :content_description %>
-    <%= f.input :publisher%>
-    <%= f.input :distro %>
-    <%= f.input :physical_description %>
-    <%= f.input :language%>
-    <%= f.input :notes%>
-    <%= f.input :see_also %>
-    <%= f.input :freedoms_and_restrictions %>
-    <%= f.input :archival_location%>
-    <%= f.input :distributor%>
-    <%= f.input :digital_reference%>
-    <br>
+    <div class='new_zine_input'> <%= f.input :title %> </div>
+    <div class='new_zine_input'> <%= f.input :issue %> </div>
+    <div class='new_zine_input'> <%= f.input :author%> </div>
+    <div class='new_zine_input'> <%= f.input :editor %> </div>
+    <div class='new_zine_input'> <%= f.input :contributor %> </div>
+    <div class='new_zine_input'> <%= f.input :genre%> </div>
+    <div class='new_zine_input'> <%= f.input :subject %> </div>
+    <div class='new_zine_input'> <%= f.input :month %> </div>
+    <div class='new_zine_input'> <%= f.input :location_of_publication %> </div>
+    <div class='new_zine_input'> <%= f.input :content_description %> </div>
+    <div class='new_zine_input'> <%= f.input :publisher%> </div>
+    <div class='new_zine_input'> <%= f.input :distro %> </div>
+    <div class='new_zine_input'> <%= f.input :physical_description %> </div>
+    <div class='new_zine_input'> <%= f.input :language%> </div>
+    <div class='new_zine_input'> <%= f.input :notes%> </div>
+    <div class='new_zine_input'> <%= f.input :see_also %> </div>
+    <div class='new_zine_input'> <%= f.input :freedoms_and_restrictions %> </div>
+    <div class='new_zine_input'> <%= f.input :archival_location%> </div>
+    <div class='new_zine_input'> <%= f.input :distributor%> </div>
+    <div class='new_zine_input'> <%= f.input :digital_reference%> </div>
+    <div class='new_zine_input'> <%= f.input :year%> </div>
+
+    </br>
 
     <%= f.submit 'Add Zine' %>
   <% end %>

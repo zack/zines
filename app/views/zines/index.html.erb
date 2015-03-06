@@ -2,17 +2,19 @@
 
 <h1><%= @zines.count %> Zines</h1>
 
-<table id='zines'>
-  <tr id='headers'>
-    <% for attribute in @zines.first.attributes.keys %>
-      <th><%= attribute.humanize %></th>
-    <% end %>
-  </tr>
-  <% @zines.each do |zine| %>
-    <tr>
-      <% for attribute in zine.attributes.keys %>
-        <td><%= zine.attributes[attribute].to_s %></td>
+<% if @zines.count > 0 %>
+  <table id='zines'>
+    <tr id='headers'>
+      <% for attribute in @zines.first.attributes.keys %>
+        <th><%= attribute.humanize %></th>
       <% end %>
     </tr>
-  <% end %>
-</table>
+    <% @zines.each do |zine| %>
+      <tr>
+        <% for attribute in zine.attributes.keys %>
+          <td><%= zine.attributes[attribute].to_s %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
