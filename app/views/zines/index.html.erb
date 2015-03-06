@@ -1,1 +1,17 @@
-hello world
+<h1>All Zines</h1>
+
+<table id='zines' border='1px solid black'>
+  <tr id='headers'>
+    <% for attribute in @zines.first.attributes.keys %>
+      <th><%= attribute.humanize %></th>
+    <% end %>
+  </tr>
+  <% @zines.each do |zine| %>
+    <tr>
+      <% for attribute in zine.attributes.keys %>
+        <td><%= zine.attributes[attribute].to_s %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+

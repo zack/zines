@@ -1,3 +1,7 @@
-<h1> Zine was successfully added</h1>
+<h1><%= @zine.title.to_s %></h1>
 
-<%= link_to 'Back', zine_path %>
+<% for attribute in @zine.attributes.keys %>
+  <span class='attribute'><%= attribute.humanize %>: <%= @zine.attributes[attribute].to_s %></br></span>
+<% end %>
+
+<%= link_to 'Back', new_zine_path %>
