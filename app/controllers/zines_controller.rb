@@ -8,10 +8,6 @@ class ZinesController < ApplicationController
     @zines = Zine.all
   end
 
-  def list
-    @zines = Zine.all
-  end
-
   def show
     @zine = Zine.find(params[:id])
   end
