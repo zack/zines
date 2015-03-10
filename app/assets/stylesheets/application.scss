@@ -1,5 +1,6 @@
 body {
   font-family: 'arial', 'sans-serif';
+  background-color: #63193E;
   .new_zine_input {
     label {
       display: inline-block;
@@ -15,7 +16,10 @@ body {
   table#zines {
     border-collapse: collapse;
     th {
-      background-color: #CCC;
+      background-color: #CC297A;
+    }
+    td {
+      background-color: #FCCFF1;
     }
     td,th {
       min-width: 87px;
